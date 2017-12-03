@@ -18,7 +18,7 @@ class OntologyHandler:
       return self.ontology[instanceID]
 
    def getInstancesForClass(self,className):
-      return self.ontology.search(type = onto[className])
+      return self.ontology.search(type = self.ontology[className])
 
    def getInstancesWithProperty(self,propertyName,propertyValue,reasoner):
 

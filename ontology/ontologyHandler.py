@@ -3,7 +3,7 @@ import sys
 
 import owlready2 as owl
 
-class Ontology:
+class OntologyHandler:
    
    def __init__(self, ontologyDirectory, ontologyIRI):
       self.ontologyDirectory = ontologyDirectory
@@ -28,19 +28,17 @@ class Ontology:
       resultList = []
 
       if propertyName == "hasEffect":
-          self.ontology.search(hasEffect = ontology[propertyValue])
+          resultList = self.ontology.search(hasEffect = self.ontology[propertyValue])
       elif propertyName == "hasEffectOn":
-         self.ontology.search(hasEffectOn = ontology[propertyValue])
+         resultList = self.ontology.search(hasEffectOn = self.ontology[propertyValue])
       elif propertyName == "hasActiveIngredient":
-         self.ontology.search(hasActiveIngredient = ontology[propertyValue])
+         resultList = self.ontology.search(hasActiveIngredient = self.ontology[propertyValue])
       elif propertyName == "containedIn":
-         self.ontology.search(containedIn = ontology[propertyValue])
+         resultList = self.ontology.search(containedIn = self.ontology[propertyValue])
       elif propertyName == "affectedBy":
-         self.ontology.search(affectedBy = ontology[propertyValue])
+         resultList = self.ontology.search(affectedBy = self.ontology[propertyValue])
       elif propertyName == "causedBy":
-         self.ontology.search(causedBy = ontology[propertyValue])
-      else:
-         []
+         resultList = self.ontology.search(causedBy = self.ontology[propertyValue])
 
       return [item.name for item in resultList]
      

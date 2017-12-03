@@ -1,0 +1,1049 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/teamO/drug-effects"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/teamO/drug-effects">
+    <Prefix name="" IRI="http://www.semanticweb.org/teamO/drug-effects#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Depression"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyPart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Shock"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Anxiety"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Eyes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Liver"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lung"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Malaise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tremor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AdverseEffect"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ulcer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEffect"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasEffectOn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Aspirin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypertension"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActiveIngredient"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vomiting"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Head"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dizziness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Asthma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Headache"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#bowel"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ibuprofen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Throat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hunger"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Heart"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Insulin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Coma"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chest_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ear"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diarrhoea"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActiveIngredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Drug"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Stomach"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ear_pain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Redness"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Diabetic"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Migraine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectedBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Hypersensitivity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Chest"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Sweating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#containedIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Dexpanthenol"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Vertigo"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Anxiety"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Aspirin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Asthma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Chest"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Chest_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Coma"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Depression"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Dexpanthenol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Diabetic"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Ear"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Ear_pain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Eyes"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Head"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Heart"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Hypersensitivity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Insulin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Liver"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Lung"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Malaise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Migraine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Redness"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Shock"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Stomach"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Sweating"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#Throat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Tremor"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Ulcer"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Vertigo"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#AdverseEffect"/>
+        <NamedIndividual IRI="#Vomiting"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BodyPart"/>
+        <NamedIndividual IRI="#bowel"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Drug"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Anxiety"/>
+        <NamedIndividual IRI="#Insulin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Anxiety"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Aspirin"/>
+        <NamedIndividual IRI="#Asthma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Aspirin"/>
+        <NamedIndividual IRI="#Diabetic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Aspirin"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Aspirin"/>
+        <NamedIndividual IRI="#Ulcer"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Asthma"/>
+        <NamedIndividual IRI="#Aspirin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Asthma"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Asthma"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Chest"/>
+        <NamedIndividual IRI="#Asthma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Chest"/>
+        <NamedIndividual IRI="#Chest_pain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Chest"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Chest_pain"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Coma"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Coma"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Depression"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Dexpanthenol"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Dexpanthenol"/>
+        <NamedIndividual IRI="#Hypersensitivity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Dexpanthenol"/>
+        <NamedIndividual IRI="#Vomiting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Diabetic"/>
+        <NamedIndividual IRI="#Aspirin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+        <NamedIndividual IRI="#Dexpanthenol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Dizziness"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Dizziness"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Dizziness"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Dizziness"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Dizziness"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Ear"/>
+        <NamedIndividual IRI="#Ear_pain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Ear_pain"/>
+        <NamedIndividual IRI="#Insulin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Eyes"/>
+        <NamedIndividual IRI="#Diabetic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Eyes"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Eyes"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Eyes"/>
+        <NamedIndividual IRI="#Malaise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Eyes"/>
+        <NamedIndividual IRI="#Migraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Head"/>
+        <NamedIndividual IRI="#Depression"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Head"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Head"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Head"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Head"/>
+        <NamedIndividual IRI="#Migraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Head"/>
+        <NamedIndividual IRI="#Vertigo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Headache"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Headache"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Headache"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Headache"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Headache"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Headache"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Heart"/>
+        <NamedIndividual IRI="#Depression"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Heart"/>
+        <NamedIndividual IRI="#Diabetic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Heart"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Heart"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Hunger"/>
+        <NamedIndividual IRI="#Insulin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Hypersensitivity"/>
+        <NamedIndividual IRI="#Dexpanthenol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Hypersensitivity"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Hypertension"/>
+        <NamedIndividual IRI="#Aspirin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Hypertension"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+        <NamedIndividual IRI="#Coma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+        <NamedIndividual IRI="#Depression"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ibuprofen"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Insulin"/>
+        <NamedIndividual IRI="#Anxiety"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Insulin"/>
+        <NamedIndividual IRI="#Ear_pain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Insulin"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Insulin"/>
+        <NamedIndividual IRI="#Redness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Liver"/>
+        <NamedIndividual IRI="#Diabetic"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Liver"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Lung"/>
+        <NamedIndividual IRI="#Anxiety"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Lung"/>
+        <NamedIndividual IRI="#Asthma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Malaise"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Malaise"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Malaise"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Malaise"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Migraine"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Redness"/>
+        <NamedIndividual IRI="#Insulin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Shock"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Stomach"/>
+        <NamedIndividual IRI="#Anxiety"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Stomach"/>
+        <NamedIndividual IRI="#Depression"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Stomach"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Stomach"/>
+        <NamedIndividual IRI="#Hunger"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Stomach"/>
+        <NamedIndividual IRI="#Malaise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Sweating"/>
+        <NamedIndividual IRI="#Aspirin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Sweating"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Sweating"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Throat"/>
+        <NamedIndividual IRI="#Anxiety"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Throat"/>
+        <NamedIndividual IRI="#Asthma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#Throat"/>
+        <NamedIndividual IRI="#Malaise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Tremor"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Tremor"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Ulcer"/>
+        <NamedIndividual IRI="#Aspirin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Vertigo"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Vertigo"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Vertigo"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Vomiting"/>
+        <NamedIndividual IRI="#Dexpanthenol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Vomiting"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Vomiting"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#causedBy"/>
+        <NamedIndividual IRI="#Vomiting"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#bowel"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectedBy"/>
+        <NamedIndividual IRI="#bowel"/>
+        <NamedIndividual IRI="#Migraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+        <NamedIndividual IRI="#Asthma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+        <NamedIndividual IRI="#Coma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Panadol/Acetaminophen"/>
+        <NamedIndividual IRI="#Sweating"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+        <NamedIndividual IRI="#Anxiety"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+        <NamedIndividual IRI="#Asthma"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+        <NamedIndividual IRI="#Migraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+        <NamedIndividual IRI="#Sweating"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+        <NamedIndividual IRI="#Tremor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Ventolin/Salbutamol"/>
+        <NamedIndividual IRI="#Vertigo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+        <NamedIndividual IRI="#Migraine"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+        <NamedIndividual IRI="#Vertigo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Voltaren/Diclofenac"/>
+        <NamedIndividual IRI="#Vomiting"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+        <NamedIndividual IRI="#Malaise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Xanax/Alprazolam"/>
+        <NamedIndividual IRI="#Vertigo"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+        <NamedIndividual IRI="#Diarrhoea"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+        <NamedIndividual IRI="#Dizziness"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+        <NamedIndividual IRI="#Hypertension"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zovirax/Acyclovir"/>
+        <NamedIndividual IRI="#Malaise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+        <NamedIndividual IRI="#Headache"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+        <NamedIndividual IRI="#Hypersensitivity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+        <NamedIndividual IRI="#Malaise"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+        <NamedIndividual IRI="#Tremor"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasEffect"/>
+        <NamedIndividual IRI="#Zyrtec/Cetirizine"/>
+        <NamedIndividual IRI="#Vomiting"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#affectedBy"/>
+        <ObjectProperty IRI="#hasEffectOn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#causedBy"/>
+        <ObjectProperty IRI="#hasEffect"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#containedIn"/>
+        <ObjectProperty IRI="#hasActiveIngredient"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectedBy"/>
+        <Class IRI="#BodyPart"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causedBy"/>
+        <Class IRI="#AdverseEffect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#containedIn"/>
+        <Class IRI="#ActiveIngredient"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActiveIngredient"/>
+        <Class IRI="#Drug"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEffect"/>
+        <Class IRI="#Drug"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasEffectOn"/>
+        <Class IRI="#AdverseEffect"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectedBy"/>
+        <Class IRI="#AdverseEffect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#causedBy"/>
+        <Class IRI="#Drug"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#containedIn"/>
+        <Class IRI="#Drug"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActiveIngredient"/>
+        <Class IRI="#ActiveIngredient"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEffect"/>
+        <Class IRI="#AdverseEffect"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasEffectOn"/>
+        <Class IRI="#BodyPart"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

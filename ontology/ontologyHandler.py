@@ -39,7 +39,7 @@ class OntologyHandler:
          resultList = self.ontology.search(affectedBy = self.ontology[propertyValue])
       elif propertyName == "causedBy":
          resultList = self.ontology.search(causedBy = self.ontology[propertyValue])
-
+      
       return [item.name for item in resultList]
      
 

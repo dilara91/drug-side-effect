@@ -22,6 +22,11 @@ def addNewEntry(drugName,adverseEffect,userid,userAge,userGender,userHeight,user
 		print("The drug is not on the ontology. Cannot add entry.")
 		return
 
+	userGender = normalizeUserGender(userGender)
+	if userGender == 'Unknown':
+		print("The gender is unknown. Cannot add entry.")
+		return
+
 	new_drug =  ontology.Drug("drug_"+key, namespace = ontology, hasEffect = [adverse_onto], hasName = [drugName])
 	if existingUser(userid):
 		user = ontology[userid]
@@ -48,6 +53,13 @@ def existingUser(userid):
 		return False
 	else:
 		return True
+
+def normalizeUserGender(userGender):
+	userGender = userGender.lower()
+	if userGender == 'female' or userGender == 'male':
+		return userGender
+	else:
+		return 'Unknown'
 
 
 if __name__ == '__main__':

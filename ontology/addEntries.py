@@ -11,7 +11,7 @@ def createOntology():
 	owl.onto_path.append(ontologyDirectory)
 	ontology = owl.get_ontology(ontologyName).load()
 
-def addNewEntry(drugName,adverseEffect,userid,userAge,userGender,userHeight,userWeight):
+def addNewEntry(drugName,adverseEffect,userid,username,userAge,userGender,userHeight,userWeight):
 	key = str(time.time())
 	key = key.replace('.',"")
 	adverse_onto = getAdverseEffect(adverseEffect)
@@ -28,10 +28,12 @@ def addNewEntry(drugName,adverseEffect,userid,userAge,userGender,userHeight,user
 		return
 
 	new_drug =  ontology.Drug("drug_"+key, namespace = ontology, hasEffect = [adverse_onto], hasName = [drugName])
-	if existingUser(userid):
-		user = ontology[userid]
+
+	user_id_onto = "user_"+str(userid)
+	if existingUser(user_id_onto):
+		user = ontology[user_id_onto]
 	else:
-		user = ontology.User(userid, namespace = ontology, hasAge = [userAge], hasGender = [userGender], hasHeight = [userHeight], hasWeight = [userWeight])
+		user = ontology.User(user_id_onto, namespace = ontology, hasName = [username], hasAge = [userAge], hasGender = [userGender], hasHeight = [userHeight], hasWeight = [userWeight])
 
 	user.showsSymptoms.append(adverse_onto)
 	user.uses.append(new_drug)

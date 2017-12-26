@@ -14,6 +14,14 @@ def createOntology(directory,filename):
 	global ontologyHandler
 	ontologyHandler = ontHandlerModule.OntologyHandler(directory,filename)
 	
+def getAllDrugs():
+	result_list = ontologyHandler.getInstancesForClass('Drug')
+	return [item.name for item in result_list]
+
+def getAllAdverseEffects():
+	result_list = ontologyHandler.getInstancesForClass('AdverseEffect')
+	return [item.name for item in result_list]
+
 def searchAdverseEffects(drugName):
 	return ontologyHandler.getInstancesWithProperty("causedBy",drugName,False)
 

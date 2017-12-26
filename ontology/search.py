@@ -7,11 +7,12 @@ import ontologyHandler as ontHandlerModule
 
 global ontologyHandler
 
-def createOntology():
-	ontologyDirectory = os.path.join('.')
-	ontologyName = os.path.join('.', 'drugs.owl')
+def createOntology(directory,filename):
+	ontologyDirectory = os.path.join('/Users/i339336/drug-side-effect/ontology')
+	ontologyName = os.path.join(ontologyDirectory, 'drugs.owl')
+	#ontologyName = "http://semanticweb.org/teamO/drug-effects"
 	global ontologyHandler
-	ontologyHandler = ontHandlerModule.OntologyHandler(ontologyDirectory,ontologyName)
+	ontologyHandler = ontHandlerModule.OntologyHandler(directory,filename)
 	
 def searchAdverseEffects(drugName):
 	return ontologyHandler.getInstancesWithProperty("causedBy",drugName,False)

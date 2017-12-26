@@ -5,8 +5,8 @@ import time
 import owlready2 as owl
 
 def createOntology():
-	ontologyDirectory = os.path.join('.')
-	ontologyName = os.path.join('.', 'drugs_social.owl')
+	ontologyDirectory = os.path.join('Users/i339336/drug-side-effect/ontology')
+	ontologyName = os.path.join('drugs_social.owl')
 	global ontology
 	owl.onto_path.append(ontologyDirectory)
 	ontology = owl.get_ontology(ontologyName).load()

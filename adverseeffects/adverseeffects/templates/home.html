@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    {% block content %}
+    <h1>Drugs</h1>
+    <ul>
+        {% for x in drugs %}
+            <li>{{ x }}</li>
+        {% endfor %}
+    </ul>
+    {% endblock %}
+</body>
+</html>

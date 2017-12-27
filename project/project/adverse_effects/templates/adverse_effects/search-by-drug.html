@@ -1,0 +1,50 @@
+{% extends 'adverse_effects/base.html' %}
+{% load i18n static bootstrap %}
+
+
+{% block content %}
+
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <form action="" method="POST" id="search-form">{% csrf_token %}
+                <div class="col-sm-6">
+                    <select name="type" class="form-control">
+                        <option value="">--- select seach type ---</option>
+                        <option value="Active Ingredients" {% if type == "Active Ingredients" %}selected{% endif %}>Active Ingredients</option>
+                        <option value="Adverse Effects" {% if type == "Adverse Effects" %}selected{% endif %}>Adverse Effects</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group input-group-sm"><select name="drug" class="form-control">
+                        {% for d in drugs %}
+                            <option value="{{ d }}" {% if drug == d %}selected{% endif %}>{{ d }}</option>
+                        {% endfor %}
+                    </select>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" id="search-button"><i class="glyphicon glyphicon-search"></i> </button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </form>
+        </div><!-- /.row -->
+        <br>
+        <div class="jumbotron">
+            {% if results|length > 0 %}
+                The {{ type }} for <b>{{ drug }}</b> are:  <i>{{ results|join:', ' }}</i>
+            {% else %}
+                <p class="text-center"> Empty Result</p>
+            {% endif %}
+        </div>
+        <div class="jumbotron">
+            {% if results2|length > 0 %}
+                The {{ type }} for <b>{{ drug }}</b> are:  <i>{{ results2|join:', ' }}</i>
+            {% else %}
+                <p class="text-center"> Empty Result</p>
+            {% endif %}
+        </div>
+
+    </div>
+{% endblock %}
+

@@ -1,0 +1,61 @@
+{% extends "account/base.html" %}
+{% load i18n static bootstrap humanize %}
+
+{% block jumbotron %}{% endblock %}
+{% block content %}
+    <style>
+        .gtco-cover.gtco-cover-xs {
+            height: 150px;
+        }
+    </style>
+    <header id="gtco-header" class="gtco-cover gtco-cover-xs" role="banner" style="background-image:url({% static 'images/img_bg_1.jpg' %});">
+        <div class="overlay"></div>
+        <div class="gtco-container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center">
+                    <div class="display-t">
+                        {#						<div class="display-tc">#}
+                        {#							<h1 class="animate-box fadeInUp animated-fast" data-animate-effect="fadeInUp">Phone List Management</h1>#}
+                        {#							<h2 class="animate-box fadeInUp animated-fast" data-animate-effect="fadeInUp">Manage DNC & Tele-Sales List,  <em><a href="{% url 'tele-market:phone-management' %}">Upload </a> new List</em> </h2>#}
+                        {#						</div>#}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="gtco-section">
+        <div class="gtco-container">
+            <div class="row row-pb-md">
+                <div class='col-sm-6 col-sm-offset-3 animate-box' style="z-index: 20000;">
+{#                    <h4>Login</h4>#}
+                    <h5><strong>Welcome</strong> login to get started!</h5>
+                    <form role="form" id='loginform' action="{% url 'account:login' %}" method="post">
+                        {% if form.errors %}
+                            <div class="col-xs-12">
+                                <span>Incorrect username or password. <a href="" title="Reset My Password">Forgot Password</a> </span>
+                            </div>
+                        {% endif %}
+
+                        {% if next %}
+                            {% if user.is_authenticated %}
+                                <div class="col-xs-12">You don't have access to this page. To proceed, please login with an account that has access.</div>
+                            {% else %}
+                                <div class="col-xs-12"></div>
+                            {% endif %}
+                        {% endif %}
+
+                        {% csrf_token %}
+                        {{ form|bootstrap }}
+                        <input type="hidden" name="next" value="{{ next }}"/>
+
+                        <span class="check-left"><input type="checkbox">Remember me</span>
+                        <!-- <span class="check-right"><a href="#">Forgot password?</a></span> -->
+                        <div class="clearfix"></div>
+                        <button class="btn btn-info btn-block" type="submit">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

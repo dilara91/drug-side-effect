@@ -1,0 +1,28 @@
+{% extends 'adverse_effects/base.html' %}
+{% load i18n static bootstrap %}
+
+{% block content %}
+
+<div class="articles">
+    <div class="row">
+        <div class="col-md-12">
+            <h2>{{ blog.title }} <small class="pull-right"><i>{{ b.timestamp }}</i></small></h2>
+            <p>{{ blog.content }}</p>
+        </div>
+        {% for c in blog.comment_set.all %}
+            <div class="col-md-8">
+                <p>{{ c.content }} <small class="pull-right"><i>{{ c.timestamp }}</i></small></p>
+                <p class="pull-right"><small>{{ c.user.first_name }}</small></p>
+            </div>
+        {% endfor %}
+        <div class="col-md-8">
+            <form method="post" >{% csrf_token %}
+                <textarea style="width: 100%" required name="comment"></textarea>
+                <button type="submit" class="btn-primary btn">Post</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endblock %}
+

@@ -1,0 +1,51 @@
+{% extends 'adverse_effects/base.html' %}
+{% load i18n static bootstrap %}
+
+
+{% block content %}
+
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6">
+                <form action="" method="GET" id="search-form">{% csrf_token %}
+                    <div class="input-group input-group-sm">
+                        <input type="text" class="form-control" id="search-query" name="q" value="{{ q|default:'' }}" placeholder="Search for Drug or Adverse Effect">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" id="search-button"><i class="glyphicon glyphicon-search"></i> </button>
+                        </span>
+                    </div><!-- /input-group -->
+                </form>
+            </div>
+
+        </div><!-- /.row -->
+
+            <table class="table" id="brand-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Active Ingredients</th>
+                        <th>Adverse Effect</th>
+                        <th>*</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for data in context %}
+                        <tr>
+                            <td>{{ data.id}}</td>
+                            <td>{{ data.drugname }}</td>
+                            <td>{{ data.activeingredients.all|join:", "  }}</td>
+                            <td>{{ data.adverseeffect_set.all|join:", "  }}</td>
+                            <td><a href="{% url 'core:adverse-effect-add' data.id %}" title="Add Adverse Effect" class="btn btn-primary" ><i class="fa fa-plus"></i> </a></td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+
+            </table>
+
+    </div>
+{% endblock %}
+

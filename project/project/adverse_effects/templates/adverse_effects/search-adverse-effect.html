@@ -1,0 +1,48 @@
+{% extends 'adverse_effects/base.html' %}
+{% load i18n static bootstrap %}
+
+
+{% block content %}
+
+    <br>
+    <div class="container">
+
+        <div class="row">
+            <form action="" method="POST" id="search-form">{% csrf_token %}
+                <div class="col-sm-6">
+                    <select name="type" class="form-control">
+                        <option value="">--- select search type ---</option>
+                        <option value="Active Ingredients" {% if type == "Active Ingredients" %}selected{% endif %}>Active Ingredients</option>
+                        <option value="Body Parts" {% if type == "Body Parts" %}selected{% endif %}>Body Parts</option>
+                        <option value="Drugs" {% if type == "Drugs" %}selected{% endif %}>Drugs</option>
+                    </select>
+                </div>
+                <div class="col-sm-6">
+                    <div class="input-group input-group-sm">
+                        <select name="adverse_effect" class="form-control">
+                            {% for d in adverse_effects %}
+                                <option value="{{ d }}" {% if adverse_effect == d %}selected{% endif %}>{{ d }}</option>
+                            {% endfor %}
+                        </select>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit" id="search-button"><i class="glyphicon glyphicon-search"></i> </button>
+                        </span>
+                    </div><!-- /input-group -->
+                </div>
+            </form>
+        </div><!-- /.row -->
+        <br>
+        <div class="jumbotron">
+            {% if results|length > 0 %}
+                The {{ type }} for <b>{{ drug }}</b> are:  <i>{{ results|join:', ' }}</i>
+                {% if type == 'Drugs' %}
+                    <a href="{% url 'core:adverse-effect-add' %}" title="Add Adverse Effect" class="btn-primary  btn btn-sm"><i class="fa fa-plus"></i> </a>
+                {% endif %}
+            {% else %}
+                <p class="text-center"> Empty Result</p>
+            {% endif %}
+        </div>
+
+    </div>
+{% endblock %}
+

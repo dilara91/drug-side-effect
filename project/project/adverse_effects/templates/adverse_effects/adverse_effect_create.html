@@ -1,0 +1,67 @@
+{% extends 'adverse_effects/base.html' %}
+{% load bootstrap static %}
+
+{% block content %}
+    <div class="row">
+        {% if msg %}
+            <div class="alert alert-warning">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                {{ msg }}
+            </div>
+        {% endif %}
+        <div class='col-sm-6 col-sm-offset-3'>
+            <form action="" method="POST" class="form-group">
+                {% csrf_token %}
+                {#                {{ form|bootstrap }}#}
+
+                    <div class="form-group">
+                        <label class="control-label  " for="id_drug">Drug</label>
+                        <div class=" ">
+                            <select name="drug" class=" form-control" required="" id="id_drug">
+                                <option value="" selected="">---------</option>
+                                {% for d in drugs %}
+                                    <option value="{{ d }}" {% if d == drug %}selected{% endif %}>{{ d }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label  " for="id_name">Name</label>
+                        <div class=" ">
+                            <input type="text" name="name" maxlength="50" class=" form-control" required="" id="id_name">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="control-label  " for="id_bodypart">Bodypart</label>
+                        <div class=" ">
+                            <select name="bodypart" class=" form-control" required="" id="id_bodypart">
+                                <option value="" selected="">---------</option>
+                                <option value="Head">Head</option>
+                                <option value="Eye">Eye</option>
+                                <option value="Nose">Nose</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                <br>
+                    <div class="jumbotron">
+                        <p class="text-center"> Relevant Adverse Effects</p>
+                        {% if suggestion|length > 0 %}
+
+                            Suggestions for <b>{{ drug }}</b> are:  <i>{{ suggestion|join:', ' }}</i>
+                            {% if type == 'Drugs' %}
+                                <a href="{% url 'core:adverse-effect-add' %}" title="Add Adverse Effect" class="btn-primary  btn btn-sm"><i class="fa fa-plus"></i> </a>
+                            {% endif %}
+                        {% else %}
+                            <p class="text-center"> Empty Result</p>
+                        {% endif %}
+                    </div>
+
+
+            </form>
+        </div>
+    </div>
+
+{% endblock %}

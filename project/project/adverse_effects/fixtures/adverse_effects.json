@@ -1,0 +1,109 @@
+[
+{
+  "model": "adverse_effects.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$100000$EIXlHWnRqDLn$pzx4bZK50Z/EWV4Q3Iay64JP9XWklERUwwQtLNzg9zg=",
+    "last_login": "2017-12-26T14:58:06.812Z",
+    "is_superuser": false,
+    "username": "paullo",
+    "first_name": "Paul",
+    "last_name": "Okeke",
+    "email": "pauldiconline@yahoo.com",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2017-12-26T14:30:46.584Z",
+    "age": 30,
+    "sex": "M",
+    "height": 7,
+    "weight": 73,
+    "credibility": null,
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "adverse_effects.activeingredient",
+  "pk": 1,
+  "fields": {
+    "name": "Ingregent A"
+  }
+},
+{
+  "model": "adverse_effects.activeingredient",
+  "pk": 2,
+  "fields": {
+    "name": "Ingregent B"
+  }
+},
+{
+  "model": "adverse_effects.activeingredient",
+  "pk": 3,
+  "fields": {
+    "name": "Ingregent C"
+  }
+},
+{
+  "model": "adverse_effects.drug",
+  "pk": 1,
+  "fields": {
+    "drugname": "aspirine",
+    "activeingredients": [
+      1,
+      2,
+      3
+    ]
+  }
+},
+{
+  "model": "adverse_effects.bodypart",
+  "pk": 1,
+  "fields": {
+    "name": "Head"
+  }
+},
+{
+  "model": "adverse_effects.bodypart",
+  "pk": 2,
+  "fields": {
+    "name": "Eye"
+  }
+},
+{
+  "model": "adverse_effects.bodypart",
+  "pk": 3,
+  "fields": {
+    "name": "Nose"
+  }
+},
+{
+  "model": "adverse_effects.adverseeffect",
+  "pk": 1,
+  "fields": {
+    "drugID": 1,
+    "name": "Big Effect",
+    "bodypartID": 1,
+    "userID": 1
+  }
+},
+{
+  "model": "adverse_effects.adverseeffect",
+  "pk": 2,
+  "fields": {
+    "drugID": 1,
+    "name": "Another Effect",
+    "bodypartID": 2,
+    "userID": 1
+  }
+},
+{
+  "model": "adverse_effects.adverseeffect",
+  "pk": 3,
+  "fields": {
+    "drugID": 1,
+    "name": "Another Effect 2",
+    "bodypartID": 1,
+    "userID": 1
+  }
+}
+]

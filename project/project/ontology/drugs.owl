@@ -1,0 +1,927 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/teamO/drug-effects#"
+     xml:base="http://www.semanticweb.org/teamO/drug-effects"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/teamO/drug-effects"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#affectedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teamO/drug-effects#affectedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/teamO/drug-effects#hasEffectOn"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#causedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teamO/drug-effects#causedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/teamO/drug-effects#hasEffect"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#containedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teamO/drug-effects#containedIn">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/teamO/drug-effects#hasActiveIngredient"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#hasActiveIngredient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teamO/drug-effects#hasActiveIngredient">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#hasEffect -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teamO/drug-effects#hasEffect">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#hasEffectOn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/teamO/drug-effects#hasEffectOn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/teamO/drug-effects#hasDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#AdverseEffect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#BodyPart -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Drug -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Acetaminophen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Acetaminophen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Acyclovir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Acyclovir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Alprazolam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Alprazolam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Anxiety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Anxiety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Insulin"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol"/>
+        <hasDescription>Anxiety is an emotion characterized by an unpleasant state of inner turmoil, often accompanied by nervous behavior, such as pacing back and forth, somatic complaints, and rumination. It is the subjectively unpleasant feelings of dread over anticipated events, such as the feeling of imminent death. Anxiety is not the same as fear, which is a response to a real or perceived immediate threat, whereas anxiety is the expectation of future threat. Anxiety is a feeling of uneasiness and worry, usually generalized and unfocused as an overreaction to a situation that is only subjectively seen as menacing.It is often accompanied by muscular tension, restlessness, fatigue and problems in concentration. Anxiety can be appropriate, but when experienced regularly the individual may suffer from an anxiety disorder.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Aspirin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Aspirin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Aspirin_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Asthma"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diabetic"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypertension"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ulcer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Aspirin_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Aspirin_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Asthma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Asthma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Aspirin"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol"/>
+        <hasDescription>Asthma is a common long-term inflammatory disease of the airways of the lungs. It is characterized by variable and recurring symptoms, reversible airflow obstruction, and bronchospasm. Symptoms include episodes of wheezing, coughing, chest tightness, and shortness of breath. These episodes may occur a few times a day or a few times per week. Depending on the person, they may become worse at night or with exercise.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Baclofen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Baclofen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Baclofen_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Chest_pain"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vomiting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Baclofen_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Baclofen_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Cetirizine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Cetirizine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Chest -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Chest">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Asthma"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Chest_pain"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypertension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Chest_pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Chest_pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen"/>
+        <hasDescription>Chest pain may be a symptom of a number of serious disorders and is, in general, considered a medical emergency. Even though it may be determined that the pain is noncardiac in origin, this is often a diagnosis of exclusion made after ruling out more serious causes of the pain.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Coma -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Coma">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ibuprofen"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen"/>
+        <hasDescription>Coma is a state of unconsciousness in which a person cannot be awakened; fails to respond normally to painful stimuli, light, or sound; lacks a normal wake-sleep cycle; and does not initiate voluntary actions. A person in a state of coma is described as being comatose. A distinction is made in the medical community between a real coma and a medically induced coma, the former is a result of circumstances beyond the control of the medical community, while the latter is a means by which medical professionals may allow a patient&apos;s injuries to heal in a controlled environment.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Depression -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Depression">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ibuprofen"/>
+        <hasDescription>Depression is a state of low mood and aversion to activity that can affect a person&apos;s thoughts, behavior, feelings, and sense of well-being. A depressed mood is a normal temporary reaction to life events such as loss of a loved one. It is also a symptom of some physical diseases and a side effect of some drugs and medical treatments. Depressed mood is also a symptom of some mood disorders such as major depressive disorder and dysthymia.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Dexpanthenol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Dexpanthenol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dexpanthenol_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypersensitivity"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vomiting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Dexpanthenol_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Dexpanthenol_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Diabetic -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Diabetic">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Aspirin"/>
+        <hasDescription>Commonly referred to as diabetes, is a group of metabolic disorders in which there are high blood sugar levels over a prolonged period. Symptoms of high blood sugar include frequent urination, increased thirst, and increased hunger. If left untreated, diabetes can cause many complications. Acute complications can include diabetic ketoacidosis, hyperosmolar hyperglycemic state, or death. Serious long-term complications include cardiovascular disease, stroke, chronic kidney disease, foot ulcers, and damage to the eyes.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Diarrhoea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dexpanthenol"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Majezik"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Xanax/Alprazolam"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zovirax/Acyclovir"/>
+        <hasDescription>Diarrhea, also spelled diarrhoea, is the condition of having at least three loose or liquid bowel movements each day. It often lasts for a few days and can result in dehydration due to fluid loss. Signs of dehydration often begin with loss of the normal stretchiness of the skin and irritable behaviour. This can progress to decreased urination, loss of skin color, a fast heart rate, and a decrease in responsiveness as it becomes more severe. Loose but non-watery stools in babies who are breastfed, however, may be normal.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Diazepam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Diazepam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diazepam_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Sweating"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vomiting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Diazepam_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Diazepam_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Diclofenac -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Diclofenac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Dizziness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Dizziness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ibuprofen"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Voltaren/Diclofenac"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zovirax/Acyclovir"/>
+        <hasDescription>Dizziness is an impairment in spatial perception and stability. Because the term dizziness is imprecise, it can refer to vertigo, presyncope, disequilibrium, or a non-specific feeling such as giddiness or foolishness.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Dopamine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Dopamine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dopamine_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vomiting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Dopamine_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Dopamine_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Ear -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Ear">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ear_pain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Ear_pain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Ear_pain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Insulin"/>
+        <hasDescription>Ear pain, also known as otalgia , is pain in the ear. Primary ear pain is pain that originates inside the ear. Referred ear pain is pain that originates from outside the ear. It may be caused by several other conditions, such as impacted teeth, sinus disease, inflamed tonsils, infections in the nose and pharynx, throat cancer, and occasionally as a sensory aura that precedes a migraine.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#EpiPen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#EpiPen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#EpiPen_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Sweating"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vomiting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#EpiPen_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#EpiPen_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Epinephrine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Epinephrine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Epinephrine_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Chest_pain"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Sweating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Epinephrine_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Epinephrine_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Eyes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Eyes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diabetic"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypertension"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Malaise"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Migraine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Flurbiprofen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Flurbiprofen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Head -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Head">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Depression"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypertension"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Migraine"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vertigo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Headache -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Headache">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ibuprofen"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Voltaren/Diclofenac"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Xanax/Alprazolam"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zovirax/Acyclovir"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zyrtec/Cetirizine"/>
+        <hasDescription>Headache is the symptom of pain anywhere in the region of the head or neck. It occurs in migraines (sharp, or throbbing pains), tension-type headaches, and cluster headaches. Frequent headaches can affect relationships and employment. There is also an increased risk of depression in those with severe headaches.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Heart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Heart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Depression"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diabetic"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hunger"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypertension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Hunger -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Hunger">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Insulin"/>
+        <hasDescription>Starvation is a severe deficiency in caloric energy intake, below the level needed to maintain an organism&apos;s life. It is the most extreme form of malnutrition. In humans, prolonged starvation can cause permanent organ damage and eventually, death. The term inanition refers to the symptoms and effects of starvation. Starvation may also be used as a means of torture or execution.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Hypersensitivity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Hypersensitivity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dexpanthenol"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zyrtec/Cetirizine"/>
+        <hasDescription>Hypersensitivity (also called hypersensitivity reaction or intolerance) is a set of undesirable reactions produced by the normal immune system, including allergies and autoimmunity. They are usually referred to as an over- reaction of the immune system and these reactions may be damaging, uncomfortable, or occasionally fatal.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Hypertension -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Hypertension">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Aspirin"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zovirax/Acyclovir"/>
+        <hasDescription>Hypertension (HTN or HT), also known as high blood pressure (HBP), is a long-term medical condition in which the blood pressure in the arteries is persistently elevated. High blood pressure usually does not cause symptoms. Long-term high blood pressure, however, is a major risk factor for coronary artery disease, stroke, heart failure, peripheral vascular disease, vision loss, and chronic kidney disease.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Ibuprofen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Ibuprofen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ibuprofen_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Coma"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Depression"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Ibuprofen_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Ibuprofen_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Insulin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Insulin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Insulin_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ear_pain"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hunger"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Redness"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Insulin_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Insulin_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Liver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Liver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diabetic"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypertension"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Lung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Lung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Asthma"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Majezik -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Majezik">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Flurbiprofen"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vomiting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Malaise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Malaise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Voltaren/Diclofenac"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Xanax/Alprazolam"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zovirax/Acyclovir"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zyrtec/Cetirizine"/>
+        <hasDescription>Malaise is a non-specific symptom and can present in the slightest ailment, such as an emotion (causing fainting, a vasovagal response) or hunger (light hypoglycemia), to the most serious conditions (cancer, stroke, heart attack, internal bleeding, etc.).</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Migraine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Migraine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol"/>
+        <hasDescription>A migraine is a primary headache disorder characterized by recurrent headaches that are moderate to severe. Typically, the headaches affect one half of the head, are pulsating in nature, and last from two to 72 hours. Associated symptoms may include nausea, vomiting, and sensitivity to light, sound, or smell. The pain is generally made worse by physical activity. Up to one-third of people have an aura: typically a short period of visual disturbance which signals that the headache will soon occur. Occasionally, an aura can occur with little or no headache following it.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Nitroglycerin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Nitroglycerin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Nitroglycerin_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Chest_pain"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Sweating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Nitroglycerin_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Nitroglycerin_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Parol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Parol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Acetaminophen"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Redness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Redness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Insulin"/>
+        <hasDescription>skin redness</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Salbutamol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Salbutamol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Sertralin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Sertralin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Sertraline"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Chest_pain"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Tremor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Sertraline -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Sertraline">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Shock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Shock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen"/>
+        <hasDescription>Circulatory shock, commonly known as shock, is a life-threatening medical condition of low blood perfusion to tissues resulting in cellular injury and inadequate tissue function. The typical signs of shock are low blood pressure, rapid heart rate, signs of poor end-organ perfusion (i.e., low urine output, confusion, or loss of consciousness), and weak pulses.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Stomach -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Stomach">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Depression"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hunger"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Malaise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Sweating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Sweating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Aspirin"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol"/>
+        <hasDescription>Sweating sickness, also known as &quot;English sweating sickness&quot; or &quot;English sweate&quot; (Latin: sudor anglicus), was a mysterious and highly contagious disease that struck England. The onset of symptoms was dramatic and sudden, death often occurring within hours. Although its cause remains unknown, it has been suggested that an unknown species of hantavirus was responsible for the outbreak.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Throat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Throat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Asthma"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Malaise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Tremor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Tremor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zyrtec/Cetirizine"/>
+        <hasDescription>Essential tremor (ET, also referred to as benign tremor, familial tremor, or idiopathic tremor) is the most common movement disorder; its cause is unknown. It typically involves a tremor of the arms, hands or fingers but sometimes involving the head, vocal cords or other body parts during voluntary movements such as eating and writing. It is distinct from Parkinson&apos;s disease—and often misdiagnosed as such—although some individuals have both conditions. Essential tremor is commonly described as an action tremor (i.e., it intensifies when one tries to use the affected muscles) or postural tremor (i.e., present with sustained muscle tone) rather than a resting tremor, such as is seen in Parkinson’s, which is usually not included among its symptoms.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Ulcer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Ulcer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Aspirin"/>
+        <hasDescription>An ulcer is a discontinuity or break in a bodily membrane that impedes the organ of which that membrane is a part from continuing its normal functions. In pathology, &quot;ulcer is the breach of the continuity of skin, epithelium or mucous membrane caused by sloughing out of inflamed necrotic tissue.&quot;</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Vasopressin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Vasopressin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vasopressin_ai"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Coma"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Sweating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Vasopressin_ai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Vasopressin_ai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#ActiveIngredient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Vertigo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Vertigo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Voltaren/Diclofenac"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Xanax/Alprazolam"/>
+        <hasDescription>Vertigo is a medical condition where a person feels as if they or the objects around them are moving when they are not. Often it feels like a spinning or swaying movement. This may be associated with nausea, vomiting, sweating, or difficulties walking. It is typically worsened when the head is moved. Vertigo is the most common type of dizziness.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Vomiting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Vomiting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#AdverseEffect"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dexpanthenol"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Majezik"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Voltaren/Diclofenac"/>
+        <causedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Zyrtec/Cetirizine"/>
+        <hasDescription>Vomiting can be caused by a wide variety of conditions; it may present as a specific response to ailments like gastritis or poisoning, or as a non-specific sequela of disorders ranging from brain tumors and elevated intracranial pressure to overexposure to ionizing radiation. The feeling that one is about to vomit is called nausea, which often precedes, but does not always lead to, vomiting. Antiemetics are sometimes necessary to suppress nausea and vomiting. In severe cases, where dehydration develops, intravenous fluid may be required. Self-induced vomiting can be a component of an eating disorder, such as Bulimia Nervosa, and is itself now an eating disorder on its own, purging disorder.</hasDescription>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#bowel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#bowel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#BodyPart"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <affectedBy rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Migraine"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Panadol/Acetaminophen">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Acetaminophen"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Asthma"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Coma"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Sweating"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Ventolin/Salbutamol">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Salbutamol"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Anxiety"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Asthma"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Migraine"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Sweating"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Tremor"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vertigo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Voltaren/Diclofenac -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Voltaren/Diclofenac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diclofenac"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Migraine"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vertigo"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vomiting"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Xanax/Alprazolam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Xanax/Alprazolam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Alprazolam"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Malaise"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vertigo"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Zovirax/Acyclovir -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Zovirax/Acyclovir">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Acyclovir"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Diarrhoea"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Dizziness"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypertension"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Malaise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/teamO/drug-effects#Zyrtec/Cetirizine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/teamO/drug-effects#Zyrtec/Cetirizine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Drug"/>
+        <hasActiveIngredient rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Cetirizine"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Headache"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Hypersensitivity"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Malaise"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Tremor"/>
+        <hasEffect rdf:resource="http://www.semanticweb.org/teamO/drug-effects#Vomiting"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

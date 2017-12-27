@@ -5,8 +5,9 @@ import os
 import rdflib
 from rdflib import Namespace
 
-def createOntology():
-	ontologyPath = os.path.join('.', 'drugs_social.owl')
+def createOntology(filename):
+	#ontologyPath = os.path.join('.', 'drugs_social.owl')
+	ontologyPath = filename
 	global g
 	g=rdflib.Graph()
 	g.load(ontologyPath,format='xml')

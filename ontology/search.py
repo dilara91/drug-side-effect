@@ -8,9 +8,6 @@ import ontologyHandler as ontHandlerModule
 global ontologyHandler
 
 def createOntology(directory,filename):
-	ontologyDirectory = os.path.join('/Users/i339336/drug-side-effect/ontology')
-	ontologyName = os.path.join(ontologyDirectory, 'drugs.owl')
-	#ontologyName = "http://semanticweb.org/teamO/drug-effects"
 	global ontologyHandler
 	ontologyHandler = ontHandlerModule.OntologyHandler(directory,filename)
 	

@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{owlready}
+Owlready2 web site.
+\newblock \url{http://pythonhosted.org/Owlready2/}.
+\newblock Accessed at December 2017.
+
+\bibitem{rdflib}
+Rdflib web site.
+\newblock \url{https://github.com/RDFLib/rdflib}.
+\newblock Accessed at December 2017.
+
+\bibitem{sider}
+Sider.
+\newblock \url{http://sideeffects.embl.de/}.
+\newblock Accessed at December 2017.
+
+\end{thebibliography}

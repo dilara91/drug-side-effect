@@ -21,16 +21,9 @@ def createOntology(directory,filename):
 def getTagRecommendations(blog_text):
 	blog_text = blog_text.lower()
 	words = word_tokenize(blog_text)
-	for item in words:
-		print(item)
 
 	adverse_effect = ss.getAllAdverseEffects()
 	drugs = ss.getAllDrugs()
-	for item in drugs:
-		print(item)
-
-	for item in adverse_effect:
-		print(item)
 
 	tags = []
 

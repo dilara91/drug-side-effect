@@ -5,14 +5,11 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     {#    <link rel="icon" href="../../favicon.ico">#}
 
     <title>Druggy</title>
-
-    <img alt="Logo" src="project/logo.jpeg" style="height: 45px; width: 110px;">
 
     <!-- Bootstrap core CSS -->
     <link href="{% static 'bootstrap/css/bootstrap.css' %}" rel="stylesheet">
@@ -36,13 +33,13 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="{% url 'core:home' %}">Druggy</a>
-        </div>
 
+        </div>
         <div id="navbar" class="navbar-collapse collapse pull-right" style="padding-top: 5px">
 
               <ul class="nav nav-pills pull-right">
                 <li role="presentation" class=""><a href="{% url 'core:home' %}">Home</a></li>
+                <li role="presentation"><a href="{% url 'core:blog-new' %}">Add Blog Topic</a></li>
                 <li role="presentation"><a href="{% url 'core:adverse-effect-add' %}">Add Adverse Effect</a></li>
                 <li role="presentation"><a href="{% url 'core:search-by-drug' %}">Search Drugs</a></li>
 {#                <li role="presentation"><a href="{% url 'core:search-by-adverse-effect' %}">By Adverse Effect</a></li>#}
@@ -65,7 +62,8 @@
     <div class="jumbotron">
         <div class="container">
             <h1>Druggy</h1>
-            <p>A Team-O Project.</p>
+            <p>A Team-O Project</p>
+
             <p></p>
         </div>
     </div>
@@ -77,7 +75,7 @@
     <hr>
 
     <footer>
-        <p>&copy; 2017 Ontology, Inc.</p>
+        <p>Disclaimer: The content of this database of side effects (adverse drug reactions) is intended for educational and scientific research purposes only. It is not intended as a substitute for professional medical advice, diagnosis or treatment.</p>
     </footer>
 </div> <!-- /container -->
 

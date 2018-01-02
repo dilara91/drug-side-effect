@@ -9,7 +9,15 @@
 
                     {% csrf_token %}
                     {{ form|bootstrap }}
-                    <button class="btn btn-raised btn-block btn-primary" type="submit">Save</button>
+                    <button class="btn btn-raised btn-block btn-primary" name="action" value="tags" type="submit">Get tag suggestions</button> <br>
+                    <div class="jumbotron">
+                        {% if tag|length > 0 %}
+                            The suggested tags are:  <i>{{ tag|join:', ' }}</i>
+                        {% else %}
+                            <p class="text-center"> Empty Result</p>
+                        {% endif %}
+                    </div>
+                    <button class="btn btn-raised btn-block btn-primary" name="action" value="save" type="submit">Save</button>
 
                 </form>
             </section>

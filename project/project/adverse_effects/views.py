@@ -29,6 +29,7 @@ def drug_list(request):
 
 def search_by_drug(request):
     ss.createOntology()
+    ont = OntologySearch()
     results = []
     results2 = []
     type = ""
@@ -39,7 +40,6 @@ def search_by_drug(request):
     if request.method == 'POST':
         if len(request.POST['drug']) > 2:
             drug = request.POST['drug']
-        ont = OntologySearch()
         if request.POST['type'] == 'Active Ingredients':
             results = ont.searchActiveIngredientsWithDrug(drug)
         elif request.POST['type'] == 'Adverse Effects':
@@ -48,10 +48,11 @@ def search_by_drug(request):
 
         type = request.POST['type']
 
-    return render(request, 'adverse_effects/search-by-drug.html', context={'results': results, 'results2': results2, 'drugs': drugs, 'drug': drug, 'type': type})
+    return render(request, 'adverse_effects/search-by-drug.html', context={'results': results, 'results2': results2, 'drugs': ont.getAllDrugs(), 'drug': drug, 'type': type})
 
 
 def search_by_adverse_effect(request):
+    ont = OntologySearch()
     results = []
     type = ""
     adverse_effect = None
@@ -60,9 +61,6 @@ def search_by_adverse_effect(request):
     if request.method == 'POST':
         if len(request.POST['adverse_effect']) > 2:
             adverse_effect = request.POST['adverse_effect']
-
-        ont = OntologySearch()
-
         if request.POST['type'] == 'Active Ingredients':
             results = ont.searchActiveIngredientsWithAdverseEffect(adverse_effect)
         elif request.POST['type'] == 'Drugs':
@@ -90,6 +88,7 @@ def drug_details(request, id=None):
 
 @login_required
 def adverse_effect(request, id=None, did=None):
+    ont = OntologySearch()
     if id:
         effect = get_object_or_404(AdverseEffect, id=id)
     elif did:
@@ -98,8 +97,7 @@ def adverse_effect(request, id=None, did=None):
         effect = None
 
     drug = ""
-    drugs = ['Diazepam', 'EpiPen', 'Epinephrine', 'Nitroglycerin', 'Vasopressin', 'Panadol/Acetaminophen', 'Ventolin/Salbutamol', 'Aspirin', 'Zovirax/Acyclovir']
-
+    drugs = ont.getAllDrugs()
     if request.method == 'POST':
         drug = request.POST['drug']
         name = request.POST['name']
@@ -111,11 +109,16 @@ def adverse_effect(request, id=None, did=None):
             sex = "male" if user.sex == "M" else "female"
             status = ont.addNewEntry(drug, name, user.id, user.username, user.age, sex, user.height, user.weight)
             if status == "Successfully Saved":
-                return render(request, 'adverse_effects/adverse_effect_create.html', context={'msg': "Successfully Created", 'drugs':drugs, 'drug': drug, 'bodypart': bodypart, 'name': name})
+                return render(request, 'adverse_effects/adverse_effect_create.html', context={'msg': "Successfully Created", 'drugs': drugs, 'drug': drug, 'bodypart': bodypart, 'name': name})
+            elif status == "The adverse effect is not on the ontology. Cannot add entry.":
+                options = OntologySearch().searchAdverseEffectWithDescription(name)
+                print("--------")
+                print(options)
+                return render(request, 'adverse_effects/adverse_effect_create.html', context={'msg': "{}. See suggestions: {}".format(status, ', '.join(options[:10])), 'drugs': drugs, 'drug': drug, 'bodypart': bodypart, 'name': name})
             else:
                 return render(request, 'adverse_effects/adverse_effect_create.html', context={'msg': status, 'drugs': drugs, 'drug': drug, 'bodypart': bodypart, 'name': name})
         else:
-            return render(request, 'adverse_effects/adverse_effect_create.html', context={'msg': "Form Error", 'drugs':drugs, 'drug': drug, 'bodypart': bodypart, 'name': name})
+            return render(request, 'adverse_effects/adverse_effect_create.html', context={'msg': "Form Erro ", 'drugs':drugs, 'drug': drug, 'bodypart': bodypart, 'name': name})
     else:
         form = AdverseEffectForm(instance=effect)
 

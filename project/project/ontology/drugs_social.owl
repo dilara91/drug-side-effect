@@ -239,10 +239,8 @@
   <uses rdf:resource="#drug_15140576747802598"/>
   <showsSymptoms rdf:resource="#Anxiety"/>
   <uses rdf:resource="#drug_15140576747802598"/>
-  <showsSymptoms rdf:resource="#Headache"/>
-  <uses rdf:resource="#drug_15143718948592339"/>
-  <uses rdf:resource="#drug_15143719626752698"/>
-  <uses rdf:resource="#drug_15143719761852496"/>
+  <showsSymptoms rdf:resource="#Aspirin"/>
+  <uses rdf:resource="#drug_15144733037815769"/>
 </User>
 
 <Drug rdf:about="#drug_1514057674795888">
@@ -3884,22 +3882,10 @@
   <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Panadol/Acetaminophen</hasName>
 </Drug>
 
-<Drug rdf:about="#drug_15143718948592339">
+<Drug rdf:about="#drug_15144733037815769">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEffect rdf:resource="#Headache"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitroglycerin</hasName>
-</Drug>
-
-<Drug rdf:about="#drug_15143719626752698">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEffect rdf:resource="#Headache"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitroglycerin</hasName>
-</Drug>
-
-<Drug rdf:about="#drug_15143719761852496">
-  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <hasEffect rdf:resource="#Headache"/>
-  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nitroglycerin</hasName>
+  <hasEffect rdf:resource="#Aspirin"/>
+  <hasName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Aspirin</hasName>
 </Drug>
 
 

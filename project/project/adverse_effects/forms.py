@@ -12,11 +12,11 @@ class UserForm(forms.ModelForm):
 
     class Meta:
         model = User
-        fields = ('first_name', 'last_name', 'age', 'sex', 'height', 'weight', 'credibility', 'username', 'email', 'password', 'pass2')
+        fields = ('first_name', 'last_name', 'age', 'sex', 'height', 'weight', 'username', 'email', 'password', 'pass2')
 
         widgets = {
-            'password': forms.PasswordInput(attrs={'placeholder': 'Passowrd'}),
-            'pass2': forms.PasswordInput(attrs={'placeholder': 'Repeat Passowrd',}),
+            'password': forms.PasswordInput(attrs={'placeholder': 'Password'}),
+            'pass2': forms.PasswordInput(attrs={'placeholder': 'Repeat Password',}),
         }
 
 

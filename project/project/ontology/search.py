@@ -17,6 +17,14 @@ class OntologySearch():
     # global ontologyHandler
     ontologyHandler = ontHandlerModule.OntologyHandler(ontologyDirectory, ontologyName)
 
+    def getAllDrugs(self):
+        result_list = self.ontologyHandler.getInstancesForClass('Drug')
+        return [item.name for item in result_list]
+
+    def getAllAdverseEffects(self):
+        result_list = self.ontologyHandler.getInstancesForClass('AdverseEffect')
+        return [item.name for item in result_list]
+
     def searchAdverseEffects(self, drugName):
         return self.ontologyHandler.getInstancesWithProperty("causedBy", drugName, False)
 
